@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<html lang="en-US"><head><style class="darkreader darkreader--text" media="screen"></style><style class="darkreader darkreader--invert" media="screen"></style><style class="darkreader darkreader--inline" media="screen">[data-darkreader-inline-bgcolor] {
+    background-color: var(--darkreader-inline-bgcolor) !important;
+  }
+  [data-darkreader-inline-bgimage] {
+    background-image: var(--darkreader-inline-bgimage) !important;
+  }
+  [data-darkreader-inline-border] {
+    border-color: var(--darkreader-inline-border) !important;
+  }
+  [data-darkreader-inline-border-bottom] {
+    border-bottom-color: var(--darkreader-inline-border-bottom) !important;
+  }
+  [data-darkreader-inline-border-left] {
+    border-left-color: var(--darkreader-inline-border-left) !important;
+  }
+  [data-darkreader-inline-border-right] {
+    border-right-color: var(--darkreader-inline-border-right) !important;
+  }
+  [data-darkreader-inline-border-top] {
+    border-top-color: var(--darkreader-inline-border-top) !important;
+  }
+  [data-darkreader-inline-boxshadow] {
+    box-shadow: var(--darkreader-inline-boxshadow) !important;
+  }
+  [data-darkreader-inline-color] {
+    color: var(--darkreader-inline-color) !important;
+  }
+  [data-darkreader-inline-fill] {
+    fill: var(--darkreader-inline-fill) !important;
+  }
+  [data-darkreader-inline-stroke] {
+    stroke: var(--darkreader-inline-stroke) !important;
+  }
+  [data-darkreader-inline-outline] {
+    outline-color: var(--darkreader-inline-outline) !important;
+  }
+  [data-darkreader-inline-stopcolor] {
+    stop-color: var(--darkreader-inline-stopcolor) !important;
+  }</style><style class="darkreader darkreader--variables" media="screen">:root {
+     --darkreader-neutral-background: #212222;
+     --darkreader-neutral-text: #eae3d9;
+     --darkreader-selection-background: #165aaa;
+     --darkreader-selection-text: #fbf5ec;
+  }</style><style class="darkreader darkreader--root-vars" media="screen"></style>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="profile" href="https://gmpg.org/xfn/11">
+      <title>Home – Grasp</title>
+  <meta name="robots" content="max-image-preview:large">
+  <link rel="dns-prefetch" href="//s.w.org">
+  <link rel="alternate" type="application/rss+xml" title="Grasp » Feed" href="https://kit.pixel-show.com/grasp/feed/">
+  <link rel="alternate" type="application/rss+xml" title="Grasp » Comments Feed" href="https://kit.pixel-show.com/grasp/comments/feed/">
+  <script>
+        window.addEventListener('scroll', function() {
+                var header = document.getElementById('header');
+                if (window.scrollY > 50) { // Adjust the scroll threshold as needed
+                        header.classList.add('initial-header');
+                } else {
+                        header.classList.remove('initial-header');
+                }
+        });
+  </script>
+  <script>
+  window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/kit.pixel-show.com\/grasp\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.9.9"}};
+  /*! This file is auto-generated */
+  !function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([10084,65039,8205,55357,56613],[10084,65039,8203,55357,56613])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+  </script><script src="https://kit.pixel-show.com/grasp/wp-includes/js/wp-emoji-release.min.js?ver=5.9.9" type="text/javascript" defer=""></script>
+  <style>
+#header {
+    position: relative;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    transition: top 0.5s; /* Smooth transition for position changes */
+}
+
+.initial-header {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: none; /* No transition for initial position */
+}
+
+    
+    .curved-edge-box {
+    position: relative;
+    overflow: hidden;
+    
+    color: #fff;
+    border-radius: 0 0 50% 0;
+    padding: 20px;
+    margin-right: 5px; /* Adjust this to create space between the image and the box */
+    float: left;
+    border: 5px solid #4e19eb; /* Border around the box */
+    text-align: justify; /* Justify text alignment */
+}
+
+.elementor-column-wrap {
+    float: left;
+    width: calc(100% - 200px); /* Adjust this value based on your layout */
+}
+
+.elementor-column-wrap img {
+    float: right;
+    margin-right: 20px;
+    margin-top: 20px; /* Adjust this to match the curved edge box's padding */
+    border-radius: 50%; /* This ensures the image is circular */
+}
+
+
+
+
+
+
+  img.wp-smiley,
+  img.emoji {
+      display: inline !important;
+      border: none !important;
+      box-shadow: none !important;
+      height: 1em !important;
+      width: 1em !important;
+      margin: 0 0.07em !important;
+      vertical-align: -0.1em !important;
+      background: none !important;
+      padding: 0 !important;
+  }
+
+
+  .elementor-widge-container {
+    height: -10%;
+    display: flex;
+    align-items: center; /* Vertically center items */
+}
+
+.flex-container {
+    display: flex;
+    align-items: center; /* Vertically center items */
+    justify-content: space-between; /* Space evenly between items */
+    width: 100%;
+}
+
+.elementor-heading-title {
+    margin-right: 20px; /* Adjust the spacing between text and image */
+}
+
+.container {
+      max-width: 350px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    input[type="file"] {
+      margin-bottom: 10px;
+    }
+    progress {
+      width: 100%;
+    }
+    video {
+      width: 100%;
+    }
+
+
+
+
+  </style>
+      <link rel="stylesheet" id="wp-block-library-css" href="https://kit.pixel-show.com/grasp/wp-includes/css/dist/block-library/style.min.css?ver=5.9.9" media="all">
+  <style id="global-styles-inline-css">
+  body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+  </style>
+  <link rel="stylesheet" id="template-kit-export-css" href="https://kit.pixel-show.com/grasp/wp-content/plugins/template-kit-export/public/assets/css/template-kit-export-public.min.css?ver=1.0.21" media="all">
+  <link rel="stylesheet" id="hello-elementor-css" href="https://kit.pixel-show.com/grasp/wp-content/themes/hello-elementor/style.min.css?ver=2.7.1" media="all">
+  <link rel="stylesheet" id="hello-elementor-theme-style-css" href="https://kit.pixel-show.com/grasp/wp-content/themes/hello-elementor/theme.min.css?ver=2.7.1" media="all">
+  <link rel="stylesheet" id="elementor-icons-css" href="https://kit.pixel-show.com/grasp/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.20.0" media="all">
+  <link rel="stylesheet" id="elementor-frontend-legacy-css" href="https://kit.pixel-show.com/grasp/wp-content/plugins/elementor/assets/css/frontend-legacy.min.css?ver=3.13.4" media="all">
+  <link rel="stylesheet" id="elementor-frontend-css" href="https://kit.pixel-show.com/grasp/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.13.4" media="all">
+  <link rel="stylesheet" id="swiper-css" href="https://kit.pixel-show.com/grasp/wp-content/plugins/elementor/assets/lib/swiper/css/swiper.min.css?ver=5.3.6" media="all">
+  <link rel="stylesheet" id="elementor-post-4-css" href="https://kit.pixel-show.com/grasp/wp-content/uploads/sites/2/elementor/css/post-4.css?ver=1636571815" media="all">
+  <link rel="stylesheet" id="elementor-pro-css" href="https://kit.pixel-show.com/grasp/wp-content/plugins/elementor-pro/assets/css/frontend.min.css?ver=3.5.0" media="all">
+  <link rel="stylesheet" id="elementor-post-5-css" href="https://kit.pixel-show.com/grasp/wp-content/uploads/sites/2/elementor/css/post-5.css?ver=1636571815" media="all">
+  <link rel="stylesheet" id="fluentform-elementor-widget-css" href="https://kit.pixel-show.com/grasp/wp-content/plugins/fluentform/public/css/fluent-forms-elementor-widget.css?ver=4.3.25" media="all">
+  <link rel="stylesheet" id="elementor-post-217-css" href="https://kit.pixel-show.com/grasp/wp-content/uploads/sites/2/elementor/css/post-217.css?ver=1636571815" media="all">
+  <link rel="stylesheet" id="elementor-post-220-css" href="https://kit.pixel-show.com/grasp/wp-content/uploads/sites/2/elementor/css/post-220.css?ver=1636573393" media="all">
+  <link rel="stylesheet" id="elementor-icons-ekiticons-css" href="https://kit.pixel-show.com/grasp/wp-content/plugins/elementskit-lite/modules/elementskit-icon-pack/assets/css/ekiticons.css?ver=2.8.7" media="all">
+  <link rel="stylesheet" id="ekit-widget-styles-css" href="https://kit.pixel-show.com/grasp/wp-content/plugins/elementskit-lite/widgets/init/assets/css/widget-styles.css?ver=2.8.7" media="all">
+  <link rel="stylesheet" id="ekit-responsive-css" href="https://kit.pixel-show.com/grasp/wp-content/plugins/elementskit-lite/widgets/init/assets/css/responsive.css?ver=2.8.7" media="all">
+  <link rel="stylesheet" id="eael-general-css" href="https://kit.pixel-show.com/grasp/wp-content/plugins/essential-addons-for-elementor-lite/assets/front-end/css/view/general.min.css?ver=5.7.2" media="all">
+  <link rel="stylesheet" id="google-fonts-1-css" href="https://fonts.googleapis.com/css?family=Prompt%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;display=auto&amp;ver=5.9.9" media="all">
+  <link rel="stylesheet" id="elementor-icons-shared-0-css" href="https://kit.pixel-show.com/grasp/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css?ver=5.15.3" media="all">
+  <link rel="stylesheet" id="elementor-icons-fa-solid-css" href="https://kit.pixel-show.com/grasp/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min.css?ver=5.15.3" media="all">
+  <link rel="stylesheet" id="elementor-icons-fa-brands-css" href="https://kit.pixel-show.com/grasp/wp-content/plugins/elementor/assets/lib/font-awesome/css/brands.min.css?ver=5.15.3" media="all">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin=""><script src="https://kit.pixel-show.com/grasp/wp-includes/js/jquery/jquery.min.js?ver=3.6.0" id="jquery-core-js"></script><style>@font-face {
+          font-family: 'monica-ext-font_YIBBBFG';
+          src: url('chrome-extension://ofpnmcalabcbjgholdjcjblkibolbppb/static/fonts/Hind-Light.otf');
+          font-weight: 300;
+          font-display: swap;
+        }
+  @font-face {
+          font-family: 'monica-ext-font_YIBBBFG';
+          src: url('chrome-extension://ofpnmcalabcbjgholdjcjblkibolbppb/static/fonts/Hind-Regular.otf');
+          font-weight: 400;
+          font-display: swap;
+        }
+  @font-face {
+          font-family: 'monica-ext-font_YIBBBFG';
+          src: url('chrome-extension://ofpnmcalabcbjgholdjcjblkibolbppb/static/fonts/Hind-Medium.otf');
+          font-weight: 500;
+          font-display: swap;
+        }
+  @font-face {
+          font-family: 'monica-ext-font_YIBBBFG';
+          src: url('chrome-extension://ofpnmcalabcbjgholdjcjblkibolbppb/static/fonts/Hind-SemiBold.otf');
+          font-weight: 600;
+          font-display: swap;
+        }
+
+        </style>
+  <script src="https://kit.pixel-show.com/grasp/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
+  <script src="https://kit.pixel-show.com/grasp/wp-content/plugins/template-kit-export/public/assets/js/template-kit-export-public.min.js?ver=1.0.21" id="template-kit-export-js"></script>
+  <link rel="https://api.w.org/" href="https://kit.pixel-show.com/grasp/wp-json/"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://kit.pixel-show.com/grasp/xmlrpc.php?rsd">
+  <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://kit.pixel-show.com/grasp/wp-includes/wlwmanifest.xml"> 
+  <meta name="generator" content="WordPress 5.9.9">
+  <link rel="canonical" href="https://kit.pixel-show.com/grasp/template-kit/home/">
+  <link rel="shortlink" href="https://kit.pixel-show.com/grasp/?p=5">
+  <link rel="alternate" type="application/json+oembed" href="https://kit.pixel-show.com/grasp/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fkit.pixel-show.com%2Fgrasp%2Ftemplate-kit%2Fhome%2F">
+  <link rel="alternate" type="text/xml+oembed" href="https://kit.pixel-show.com/grasp/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fkit.pixel-show.com%2Fgrasp%2Ftemplate-kit%2Fhome%2F&amp;format=xml">
+  <meta name="generator" content="Elementor 3.13.4; features: a11y_improvements, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-auto">
+  <link rel="stylesheet" href="chrome-extension://mhnlakgilnojmhinhkckjpncpbhabphi/content.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&amp;display=swap"><style id="_goober"> .go1475592160{height:0;}.go1671063245{height:auto;}.go1888806478{display:flex;flex-wrap:wrap;flex-grow:1;}@media (min-width:600px){.go1888806478{flex-grow:initial;min-width:288px;}}.go167266335{background-color:#313131;font-size:0.875rem;line-height:1.43;letter-spacing:0.01071em;color:#fff;align-items:center;padding:6px 16px;border-radius:4px;box-shadow:0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12);}.go3162094071{padding-left:20px;}.go3844575157{background-color:#313131;}.go1725278324{background-color:#43a047;}.go3651055292{background-color:#d32f2f;}.go4215275574{background-color:#ff9800;}.go1930647212{background-color:#2196f3;}.go946087465{display:flex;align-items:center;padding:8px 0;}.go703367398{display:flex;align-items:center;margin-left:auto;padding-left:16px;margin-right:-8px;}.go3963613292{width:100%;position:relative;transform:translateX(0);top:0;right:0;bottom:0;left:0;min-width:288px;}.go1141946668{box-sizing:border-box;display:flex;max-height:100%;position:fixed;z-index:1400;height:auto;width:auto;transition:top 300ms ease 0ms,right 300ms ease 0ms,bottom 300ms ease 0ms,left 300ms ease 0ms,max-width 300ms ease 0ms;pointer-events:none;max-width:calc(100% - 40px);}.go1141946668 .notistack-CollapseWrapper{padding:6px 0px;transition:padding 300ms ease 0ms;}@media (max-width:599.95px){.go1141946668{width:100%;max-width:calc(100% - 32px);}}.go3868796639 .notistack-CollapseWrapper{padding:2px 0px;}.go3118922589{top:14px;flex-direction:column;}.go1453831412{bottom:14px;flex-direction:column-reverse;}.go4027089540{left:20px;}@media (min-width:600px){.go4027089540{align-items:flex-start;}}@media (max-width:599.95px){.go4027089540{left:16px;}}.go2989568495{right:20px;}@media (min-width:600px){.go2989568495{align-items:flex-end;}}@media (max-width:599.95px){.go2989568495{right:16px;}}.go4034260886{left:50%;transform:translateX(-50%);}@media (min-width:600px){.go4034260886{align-items:center;}}</style><style class="darkreader darkreader--override" media="screen"></style></head>
+  <body class="envato_tk_templates-template-default single single-envato_tk_templates postid-5 elementor-default elementor-kit-4 elementor-page elementor-page-5 e--ua-blink e--ua-chrome e--ua-webkit" monica-version="4.9.3" monica-id="ofpnmcalabcbjgholdjcjblkibolbppb" data-elementor-device-mode="tablet">
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-dark-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 0.49803921568627"></feFuncR><feFuncG type="table" tableValues="0 0.49803921568627"></feFuncG><feFuncB type="table" tableValues="0 0.49803921568627"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 1"></feFuncR><feFuncG type="table" tableValues="0 1"></feFuncG><feFuncB type="table" tableValues="0 1"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.54901960784314 0.98823529411765"></feFuncR><feFuncG type="table" tableValues="0 1"></feFuncG><feFuncB type="table" tableValues="0.71764705882353 0.25490196078431"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-red"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 1"></feFuncR><feFuncG type="table" tableValues="0 0.27843137254902"></feFuncG><feFuncB type="table" tableValues="0.5921568627451 0.27843137254902"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-midnight"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 0"></feFuncR><feFuncG type="table" tableValues="0 0.64705882352941"></feFuncG><feFuncB type="table" tableValues="0 1"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-magenta-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.78039215686275 1"></feFuncR><feFuncG type="table" tableValues="0 0.94901960784314"></feFuncG><feFuncB type="table" tableValues="0.35294117647059 0.47058823529412"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-green"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.65098039215686 0.40392156862745"></feFuncR><feFuncG type="table" tableValues="0 1"></feFuncG><feFuncB type="table" tableValues="0.44705882352941 0.4"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-orange"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.098039215686275 1"></feFuncR><feFuncG type="table" tableValues="0 0.66274509803922"></feFuncG><feFuncB type="table" tableValues="0.84705882352941 0.41960784313725"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg>
+  <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+          
+  <main id="content" class="site-main post-5 envato_tk_templates type-envato_tk_templates status-publish has-post-thumbnail hentry">
+        <div class="page-content">
+                <div data-elementor-type="wp-post" data-elementor-id="5" class="elementor elementor-5">
+                        <div class="elementor-inner">
+                <div class="elementor-section-wrap">
+                                    <section class="elementor-section elementor-top-section elementor-element elementor-element-c004662 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="c004662" data-element_type="section">
+                        <div class="elementor-container elementor-column-gap-default">
+                            <div class="elementor-row">
+                    <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-0ce8bc8" data-id="0ce8bc8" data-element_type="column">
+            <div class="elementor-column-wrap">
+                            <div class="elementor-widget-wrap">
+                                </div>
+                    </div>
+        </div>
+                <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-8c44b77" data-id="8c44b77" data-element_type="column">
+            <div class="elementor-column-wrap elementor-element-populated">
+                            <div class="elementor-widget-wrap">
+                        <div class="elementor-element elementor-element-101b536 elementor-widget-divider--view-line_text elementor-widget-divider--element-align-right elementor-widget elementor-widget-divider" data-id="101b536" data-element_type="widget" data-widget_type="divider.default">
+                <div class="elementor-widget-container">
+                    <div class="elementor-divider">
+        </div>
+                </div>
+                </div>
+                        </div>
+                    </div>
+        </div>
+                                </div>
+                    </div>
+        </section>
+        <br>
+        <div id="header">
+                <h1 class="elementor-heading-title elementor-size-default">Video Q&amp;A</h1>
+                <h6 class="subheading">Summarize All Your Videos At A Single Place</h6>
+            </div>
+                <section class="elementor-section elementor-top-section elementor-element elementor-element-2b72ef1 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="2b72ef1" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}" style="width: 754px; left: 0px;">
+                        <div class="elementor-container elementor-column-gap-default">
+                            <div class="elementor-row">
+                    <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-cf0343e" data-id="cf0343e" data-element_type="column">
+            <div class="elementor-column-wrap elementor-element-populated">
+                            <div class="elementor-widget-wrap">
+                        <div class="elementor-element elementor-element-2587058 elementor-widget elementor-widget-heading" data-id="2587058" data-element_type="widget" data-widget_type="heading.default">
+                <div class="elementor-widget-container">
+                            
+                  <section class="elementor-section elementor-top-section elementor-element elementor-element-2b72ef1 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="2b72ef1" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}" style="width: 754px; left: 0px;">
+                          <div class="elementor-container elementor-column-gap-default">
+                              <div class="elementor-row">
+                      <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-cf0343e" data-id="cf0343e" data-element_type="column">
+                  <br><br>
+                  <div class="elementor-element elementor-element-3ad297f elementor-tablet-align-center elementor-widget elementor-widget-button" data-id="3ad297f" data-element_type="widget" data-widget_type="button.default">
+                  <div class="elementor-widget-container">
+                      <div class="elementor-button-wrapper">
+              
+          </div>
+                  </div>
+                  </div>
+                          </div>
+                      </div>
+          </div>
+                  <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-a220cc9" data-id="a220cc9" data-element_type="column">
+              <div class="elementor-column-wrap">
+                              <div class="elementor-widget-wrap">
+                                  </div>
+                      </div>
+          </div>
+                                  </div>
+                      </div>
+          </section>
+                  <section class="elementor-section elementor-top-section elementor-element elementor-element-f6687b5 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="f6687b5" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}" style="width: 754px; left: 0px;">
+                          <div class="elementor-container elementor-column-gap-default">
+                              <div class="elementor-row">
+                      <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-b0cb93c" data-id="b0cb93c" data-element_type="column">
+                        <div class="elementor-column-wrap elementor-element-populated">
+                                <div class="elementor-widget-wrap">
+                                    <div class="elementor-element elementor-element-725c6af elementor-widget elementor-widget-heading" data-id="725c6af" data-element_type="widget" data-widget_type="heading.default">
+                                        <div class="elementor-widget-container">
+                                            <div class="elementor-heading-title elementor-size-default"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="curved-edge-box" style="text-align: justify; ;">
+                                Welcome to Video Q&A, your solution for instant answers from any video! Upload your video, ask your question – and presto! Our advanced technology scans through content to provide precise answers, saving your time. No more endless searches or tedious scrolling. Whether you're a student, professional, or curious mind, Video Q&A streamlines knowledge extraction. Stop struggling with time-consuming searches. Join the effortless learning revolution with Video Q&A today!
+                                <!-- Your text content here -->
+                            </div>
+                      </div>                            
+                  <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-fb56e77" data-id="fb56e77" data-element_type="column">
+              <div class="elementor-column-wrap elementor-element-populated">
+                              <div class="elementor-widget-wrap">
+                          <div class="elementor-element elementor-element-8a63bf8 elementor-widget elementor-widget-image animated fadeInDown" data-id="8a63bf8" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInDown&quot;}" data-widget_type="image.default">
+                  <div class="elementor-widget-container">
+                          
+                          <div class="elementor-image">
+                            <img width="463" height="576" src="https://raw.githubusercontent.com/21A91A6128/Project_Space/main/ps_img.jpg" class="attachment-full size-full wp-image-148" alt="" loading="lazy" srcset="https://raw.githubusercontent.com/21A91A6128/Project_Space/main/ps_img.jpg" 663w, srcset="https://raw.githubusercontent.com/21A91A6128/Project_Space/main/ps_img.jpg" 256w sizes="(max-width: 663px) 100vw, 663px">                           </div>
+                          </div>
+                  </div>
+                  <div class="elementor-element elementor-element-45ad322 animated-slow elementor-widget__width-initial elementor-absolute elementor-hidden-tablet elementor-hidden-phone elementor-widget elementor-widget-image animated fadeInUp" data-id="45ad322" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_position&quot;:&quot;absolute&quot;,&quot;motion_fx_motion_fx_scrolling&quot;:&quot;yes&quot;,&quot;motion_fx_translateY_effect&quot;:&quot;yes&quot;,&quot;motion_fx_translateY_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:1,&quot;sizes&quot;:[]},&quot;motion_fx_devices&quot;:[&quot;desktop&quot;],&quot;motion_fx_translateY_affectedRange&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;start&quot;:0,&quot;end&quot;:100}}}" data-widget_type="image.default" style="">
+                  <div class="elementor-widget-container" style="--translateY: -50px; --e-transform-transition-duration: 100ms;">
+                                  <div class="elementor-image">
+                                      <img width="372" height="508" src="https://kit.pixel-show.com/grasp/wp-content/uploads/sites/2/2021/02/image-background-2.jpg" class="attachment-full size-full wp-image-203" alt="" loading="lazy" srcset="https://kit.pixel-show.com/grasp/wp-content/uploads/sites/2/2021/02/image-background-2.jpg 572w, https://kit.pixel-show.com/grasp/wp-content/uploads/sites/2/2021/02/image-background-2-205x300.jpg 205w" sizes="(max-width: 572px) 100vw, 602px">                            </div>
+                          </div>
+                  </div>
+                          </div>
+                      </div>
+          </div>
+                                  </div>
+                      </div>
+          </section>
+                  <section class="elementor-section elementor-top-section elementor-element elementor-element-ccd362e elementor-section-content-middle elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="ccd362e" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}" style="width: 754px; left: 0px;">
+                          <div class="elementor-container elementor-column-gap-default">
+                              <div class="elementor-row">
+                      <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-f0e3d73" data-id="f0e3d73" data-element_type="column">
+              <div class="elementor-column-wrap elementor-element-populated">
+                              <div class="elementor-widget-wrap">
+                          <div class="elementor-element elementor-element-cf01cec elementor-widget__width-auto elementor-absolute elementor-hidden-tablet elementor-hidden-phone elementor-widget elementor-widget-image elementor-motion-effects-parent" data-id="cf01cec" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;motion_fx_motion_fx_scrolling&quot;:&quot;yes&quot;,&quot;motion_fx_translateY_effect&quot;:&quot;yes&quot;,&quot;motion_fx_translateY_direction&quot;:&quot;negative&quot;,&quot;motion_fx_translateY_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:3,&quot;sizes&quot;:[]},&quot;motion_fx_translateY_affectedRange&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;start&quot;:0,&quot;end&quot;:100}},&quot;motion_fx_devices&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;]}" data-widget_type="image.default" style="">
+                  <div class="elementor-widget-container elementor-motion-effects-element" style="--translateY: 91.22999999999999px; --e-transform-transition-duration: 100ms; transform: translateY(var(--translateY));">
+                                  <div class="elementor-image">
+                                                  <img width="188" height="189" src="https://kit.pixel-show.com/grasp/wp-content/uploads/sites/2/2021/02/figure-1.png" class="attachment-large size-large wp-image-152" alt="" loading="lazy" srcset="https://kit.pixel-show.com/grasp/wp-content/uploads/sites/2/2021/02/figure-1.png 188w, https://kit.pixel-show.com/grasp/wp-content/uploads/sites/2/2021/02/figure-1-150x150.png 150w" sizes="(max-width: 188px) 100vw, 188px">                            </div>
+                          </div>
+                  </div>
+                          </div>
+                      </div>
+          </div>
+                  <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-d47679d" data-id="d47679d" data-element_type="column">
+              <div class="elementor-column-wrap elementor-element-populated">
+                              <div class="elementor-widget-wrap">
+                          <div class="elementor-element elementor-element-7e50b6b elementor-widget-divider--view-line_text elementor-widget-divider--element-align-right elementor-widget elementor-widget-divider" data-id="7e50b6b" data-element_type="widget" data-widget_type="divider.default">
+                  <div class="elementor-widget-container">
+                      <div class="elementor-divider">
+          </div>
+                  </div>
+                  </div>
+                          </div>
+                      </div>
+          </div>
+                                  </div>
+                      </div>
+          </section>
+                  <section class="elementor-section elementor-top-section elementor-element elementor-element-644f24f elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="644f24f" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;background_motion_fx_motion_fx_scrolling&quot;:&quot;yes&quot;,&quot;background_motion_fx_devices&quot;:[&quot;desktop&quot;],&quot;stretch_section&quot;:&quot;section-stretched&quot;}" style="width: 754px; left: 0px;">
+                          <div class="elementor-container elementor-column-gap-default">
+                              <div class="elementor-row">
+                      <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-7b37ef9" data-id="7b37ef9" data-element_type="column">
+              <div class="elementor-column-wrap elementor-element-populated">
+                              <div class="elementor-widget-wrap">
+                          <div class="elementor-element elementor-element-6fa140f elementor-widget elementor-widget-heading" data-id="6fa140f" data-element_type="widget" data-widget_type="heading.default">
+                <div class="elementor-widge-container">
+                        <h2 class="elementor-heading-title elementor-size-default"  style="margin-left: 100px;">Wanna Try!!!</h2>
+                        <img class="w-[177px] h-[177px] neg-transition-scale"  src="https://demo.artifism.techvill.net/public/uploads/20231206/d1410b52fed9fd0f05d8938d35f1819e.png" alt="Image"></div>
+                </div>
+                <br><br>
+                <div align="right" class="container bx">
+                        <input type="file" accept=".mp4" id="videoInput">
+                        <!-- <progress id="progressBar" value="0" max="100"></progress> -->
+                        <p id="status"></p>
+
+                        <label for="textbox" style="padding-right: 250px;">Prompt:</label><br>
+                        <!-- <input type="text" class="form-control text-white" id="textbox" name="textbox"><br><br> -->
+                        <input type="text" class="form-control" id="textbox" name="textbox">
+                        <br><br>
+
+                        <video controls id="videoPlayer" style="display: none; "></video>
+                        <button onclick="submitVideo()" >Submit</button>
+
+                        <br><br>
+
+                        <!-- <textarea id="floatingTextarea" ></textarea> -->
+                        <!-- <textarea id="floatingTextarea" oninput="autoResize(this)"></textarea> -->
+                        <!-- <textarea id="floatingTextarea" oninput="adjustHeight(this)"></textarea> -->
+                        <textarea id="floatingTextarea"></textarea>
+
+                        <script>
+                                
+
+    async function submitVideo() {
+        const formData = new FormData();
+
+        formData.append('filePath', document.getElementById('videoInput').files[0]);
+        formData.append('userInputText', document.getElementById('textbox').value);
+
+        try {
+          alert('Video submitted!');
+            const response = await fetch('http://localhost:3000/generate-content', {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    // Remove this part from here
+                    // 'Content-Type': 'multipart/form-data'
+                }
+            });
+
+            if (!response.ok) {
+                throw new Error('Failed to generate content');
+            }
+
+            const responseData = await response.json();
+
+            // Display generated text in the text area
+            document.getElementById('floatingTextarea').value = responseData.generatedTexts;
+        } catch (error) {
+            console.error('Error:', error.message);
+        }
+    }
+
+                                document.getElementById('videoInput').addEventListener('change', function() {
+                                  var fileInput = this;
+                                  var progressBar = document.getElementById('progressBar');
+                                  var status = document.getElementById('status');
+                                  var videoPlayer = document.getElementById('videoPlayer');
+                            
+                                  var file = fileInput.files[0];
+                                  if (!file) {
+                                    alert('Please select a file.');
+                                    return;
+                                  }
+                            
+                                  videoPlayer.src = URL.createObjectURL(file);
+                                  //videoPlayer.style.display = 'block';
+                                });
+
+                              
+
+
+                              // Get the textarea element
+var textarea = document.getElementById("floatingTextarea");
+                                              function autoResize() {
+                    textarea.style.height = "auto"; // Reset height to auto
+                    textarea.style.height = textarea.scrollHeight + "px"; // Set height to scrollHeight
+                }
+
+                // Add event listeners for input and window resize
+                textarea.addEventListener("input", autoResize);
+                window.addEventListener("resize", autoResize);
+
+                // Initial call to autoResize function
+                autoResize();
+
+
+                        </script>      
+                </div>
+                  <div class="elementor-element elementor-element-becef41 elementor-tablet-align-center elementor-widget elementor-widget-button" data-id="becef41" data-element_type="widget" data-widget_type="button.default">
+                  <div class="elementor-widget-container">
+                      <div class="elementor-button-wrapper">
+          </div>
+                  </div>
+                  </div>
+                          </div>
+                      </div>
+          </div>
+                  <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-6c4ce0e" data-id="6c4ce0e" data-element_type="column">
+              <div class="elementor-column-wrap elementor-element-populated">
+                              <div class="elementor-widget-wrap">
+                          <div class="elementor-element elementor-element-e5a530a elementor-widget__width-inherit elementor-absolute elementor-hidden-tablet elementor-hidden-phone elementor-widget elementor-widget-image elementor-motion-effects-parent" data-id="e5a530a" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;motion_fx_motion_fx_scrolling&quot;:&quot;yes&quot;,&quot;motion_fx_translateY_effect&quot;:&quot;yes&quot;,&quot;motion_fx_translateY_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:4,&quot;sizes&quot;:[]},&quot;motion_fx_translateY_affectedRange&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;start&quot;:0,&quot;end&quot;:100}},&quot;motion_fx_devices&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;]}" data-widget_type="image.default" style="">
+                  <div class="elementor-widget-container elementor-motion-effects-element" style="--translateY: -121.63999999999999px; --e-transform-transition-duration: 100ms; transform: translateY(var(--translateY));">
+                                  <div class="elementor-image">
+                                        <img width="188" height="189" src="https://kit.pixel-show.com/grasp/wp-content/uploads/sites/2/2021/02/figure-1.png" class="attachment-large size-large wp-image-152" alt="" loading="lazy" srcset="https://kit.pixel-show.com/grasp/wp-content/uploads/sites/2/2021/02/figure-1.png 188w, https://kit.pixel-show.com/grasp/wp-content/uploads/sites/2/2021/02/figure-1-150x150.png 150w" sizes="(max-width: 188px) 100vw, 188px"></div>
+                          </div>
+                  </div>
+                          </div>
+                      </div>
+          </div>
+                                  </div>
+                      </div>
+          </section>
+                  <section class="elementor-section elementor-top-section elementor-element elementor-element-f9e9471 elementor-section-content-middle elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="f9e9471" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}" style="width: 754px; left: 0px;">
+                          <div class="elementor-container elementor-column-gap-default">
+                              <div class="elementor-row">
+                      <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-a506559" data-id="a506559" data-element_type="column">
+                  </span>
+                  </span>
+                  </div>
+                  </div>
+
+        
+            
+    <link rel="stylesheet" id="fluent-form-styles-css" href="https://kit.pixel-show.com/grasp/wp-content/plugins/fluentform/public/css/fluent-forms-public.css?ver=4.3.25" media="all">
+    <link rel="stylesheet" id="fluentform-public-default-css" href="https://kit.pixel-show.com/grasp/wp-content/plugins/fluentform/public/css/fluentform-public-default.css?ver=4.3.25" media="all">
+    <link rel="stylesheet" id="e-animations-css" href="https://kit.pixel-show.com/grasp/wp-content/plugins/elementor/assets/lib/animations/animations.min.css?ver=3.13.4" media="all">
+    <script src="https://kit.pixel-show.com/grasp/wp-content/plugins/elementskit-lite/libs/framework/assets/js/frontend-script.js?ver=2.8.7" id="elementskit-framework-js-frontend-js"></script>
+    <script id="elementskit-framework-js-frontend-js-after">
+            var elementskit = {
+                resturl: 'https://kit.pixel-show.com/grasp/wp-json/elementskit/v1/',
+            }
+    
+            
+    </script>
+    <script src="https://kit.pixel-show.com/grasp/wp-content/plugins/elementskit-lite/widgets/init/assets/js/widget-scripts.js?ver=2.8.7" id="ekit-widget-scripts-js"></script>
+    <script id="eael-general-js-extra">
+    var localize = {"ajaxurl":"https:\/\/kit.pixel-show.com\/grasp\/wp-admin\/admin-ajax.php","nonce":"add3d009b2","i18n":{"added":"Added ","compare":"Compare","loading":"Loading..."},"eael_translate_text":{"required_text":"is a required field","invalid_text":"Invalid","billing_text":"Billing","shipping_text":"Shipping","fg_mfp_counter_text":"of"},"page_permalink":"https:\/\/kit.pixel-show.com\/grasp\/template-kit\/home\/","cart_redirectition":"","cart_page_url":"","el_breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}};
+    </script>
+    <script src="https://kit.pixel-show.com/grasp/wp-content/plugins/essential-addons-for-elementor-lite/assets/front-end/js/view/general.min.js?ver=5.7.2" id="eael-general-js"></script>
+    <script src="https://kit.pixel-show.com/grasp/wp-content/plugins/elementor-pro/assets/lib/smartmenus/jquery.smartmenus.min.js?ver=1.0.1" id="smartmenus-js"></script>
+    <script src="https://kit.pixel-show.com/grasp/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.5.0" id="elementor-pro-webpack-runtime-js"></script>
+    <script src="https://kit.pixel-show.com/grasp/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.13.4" id="elementor-webpack-runtime-js"></script>
+    <script src="https://kit.pixel-show.com/grasp/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.13.4" id="elementor-frontend-modules-js"></script>
+    <script id="elementor-pro-frontend-js-before">
+    var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/kit.pixel-show.com\/grasp\/wp-admin\/admin-ajax.php","nonce":"6ac2fa5600","urls":{"assets":"https:\/\/kit.pixel-show.com\/grasp\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"https:\/\/kit.pixel-show.com\/grasp\/wp-json\/"},"i18n":{"toc_no_headings_found":"No headings were found on this page."},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"}},"facebook_sdk":{"lang":"en_US","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/kit.pixel-show.com\/grasp\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
+    </script>
+    <script src="https://kit.pixel-show.com/grasp/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.5.0" id="elementor-pro-frontend-js"></script>
+    <script src="https://kit.pixel-show.com/grasp/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2" id="elementor-waypoints-js"></script>
+    <script src="https://kit.pixel-show.com/grasp/wp-includes/js/jquery/ui/core.min.js?ver=1.13.1" id="jquery-ui-core-js"></script>
+    <script src="https://kit.pixel-show.com/grasp/wp-content/plugins/elementor/assets/lib/swiper/swiper.min.js?ver=5.3.6" id="swiper-js"></script>
+    <script src="https://kit.pixel-show.com/grasp/wp-content/plugins/elementor/assets/lib/share-link/share-link.min.js?ver=3.13.4" id="share-link-js"></script>
+    <script src="https://kit.pixel-show.com/grasp/wp-content/plugins/elementor/assets/lib/dialog/dialog.min.js?ver=4.9.0" id="elementor-dialog-js"></script>
+    <script id="elementor-frontend-js-before">
+    var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.13.4","is_static":false,"experimentalFeatures":{"a11y_improvements":true,"additional_custom_breakpoints":true,"theme_builder_v2":true,"landing-pages":true,"form-submissions":true},"urls":{"assets":"https:\/\/kit.pixel-show.com\/grasp\/wp-content\/plugins\/elementor\/assets\/"},"swiperClass":"swiper-container","settings":{"page":[],"editorPreferences":[]},"kit":{"body_background_background":"classic","active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":5,"title":"Home%20%E2%80%93%20Grasp","excerpt":"","featuredImage":"https:\/\/kit.pixel-show.com\/grasp\/wp-content\/uploads\/sites\/2\/2021\/02\/1-home-247x1024.png"}};
+    </script>
+    <script src="https://kit.pixel-show.com/grasp/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.13.4" id="elementor-frontend-js"></script><span id="elementor-device-mode" class="elementor-screen-only"></span>
+    <script src="https://kit.pixel-show.com/grasp/wp-content/plugins/elementor-pro/assets/js/preloaded-elements-handlers.min.js?ver=3.5.0" id="pro-preloaded-elements-handlers-js"></script><svg style="display: none;" class="e-font-icon-svg-symbols"></svg>
+    <script src="https://kit.pixel-show.com/grasp/wp-content/plugins/elementskit-lite/widgets/init/assets/js/animate-circle.js?ver=2.8.7" id="animate-circle-js"></script>
+    <script id="elementskit-elementor-js-extra">
+    var ekit_config = {"ajaxurl":"https:\/\/kit.pixel-show.com\/grasp\/wp-admin\/admin-ajax.php","nonce":"ad4a301a54"};
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://kit.pixel-show.com/grasp/wp-content/plugins/elementskit-lite/widgets/init/assets/js/elementor.js?ver=2.8.7" id="elementskit-elementor-js"></script>
+    <script src="https://kit.pixel-show.com/grasp/wp-content/plugins/elementor/assets/js/preloaded-modules.min.js?ver=3.13.4" id="preloaded-modules-js"></script><svg style="display: none;" class="e-font-icon-svg-symbols"></svg>
+    <script src="https://kit.pixel-show.com/grasp/wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.min.js?ver=3.5.0" id="e-sticky-js"></script>
+    <use-chat-gpt-ai-content-menu id="USE_CHAT_GPT_AI_ROOT_Context_Menu"></use-chat-gpt-ai-content-menu><use-chat-gpt-ai id="USE_CHAT_GPT_AI_ROOT" data-version="3.0.9" style="display: none;"></use-chat-gpt-ai><max-ai-minimum-app id="USE_CHAT_GPT_AI_ROOT_Minimize_Container" data-version="3.0.9"></max-ai-minimum-app><div id="MAXAI_SNACKBAR_CONTAINER" style="z-index: 2147483647; color: rgb(255, 255, 255);"></div><div id="monica-content-root" class="monica-widget" data-darkreader-mode="dynamic" data-darkreader-scheme="dark"><meta name="darkreader" content="d39ec720c2124575a09aea91a33643cb"></div></body>
+</html>
